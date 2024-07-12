@@ -59,3 +59,5 @@ Cloud computing is the on-demand delivery of IT resources over the internet with
 - Identifying benefits of automation (for example, provisioning and configuration management with AWS CloudFormation)
 - Identifying managed AWS services (for example, Amazon RDS, Amazon Elastic Container Service [Amazon ECS], Amazon Elastic Kubernetes Service [Amazon EKS], Amazon DynamoDB)
 
+
+#### Questions
