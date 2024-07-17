@@ -62,7 +62,8 @@ Cloud computing is the on-demand delivery of IT resources over the internet with
 
 #### Questions
 
-- What is Cloud Computing? On demand delivery of IT resources in the internet while providing pay-as-you-go prices
+- What is Cloud Computing? Cloud computing offers pay-as-you-go IT resource delivery over the internet on demand. This enables businesses to invest only the necessary resources in accordance with demand, rather than having to purchase all technology resources up front.
+  
 - What are the three deployment models for cloud computing, their definitions, and uses? There are Public Clouds, Private Clouds and 
 - What are the Benefits of cloud computing and their definitions?
 - What are the Amazon EC2 instance types and their definitions?
