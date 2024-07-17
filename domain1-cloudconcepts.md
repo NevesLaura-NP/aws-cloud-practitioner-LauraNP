@@ -110,7 +110,7 @@ Cloud computing is the on-demand delivery of IT resources over the internet with
 - What are the different computing models available in AWS?
 - What is an instance and its use cases?
 - What are containers and their advantages?
-- What is serverless computing and its use cases?
+- What is serverless computing and its use cases? 
 - When would you consider a hybrid deployment model?
 - What are some of the popular AWS computing services?
 - What is AWS Lambda?
@@ -128,6 +128,8 @@ Cloud computing is the on-demand delivery of IT resources over the internet with
 - How do security groups protect your EC2 instances?
 - What are the steps to launch an EC2 instance?
 - What is the importance of tagging in EC2?
-- Can you automate EC2 scaling? Yes. EC2 has an Auto scaling feature however this scaling can only happen horizontaly and not vertically. Which means that it is possible to automatically create and terminate the number of EC2 automatically however the scaling of existing EC2 cannot be automatically scaled and it is up to the user to make the actions about it.
+  
+- Can you automate EC2 scaling? Yes. The auto scaling function of EC2 can only scale horizontally; it cannot scale vertically. This indicates that while the quantity of EC2 can be created and terminated automatically, the scaling of already-existing EC2 cannot be done so automatically; instead, the user must take action.
+  
 - What security features does EC2 offer?
 - What are the benefits of using AMIs?
