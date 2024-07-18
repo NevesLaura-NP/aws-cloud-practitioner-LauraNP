@@ -176,6 +176,11 @@ AMIs are a required element to creating a EC2. It has three components. Template
 #### What is a Security Group in EC2?
 A security group serves as a virtual firewall that controls access to your instances. It is a way for you to filter the traffic that is allowed to reach your instances. Security Groups are based on rules that you can configure, it blocks all access unless one allow rule is in place for that traffic. The rules can be modified at any time and the new rule updates are automatically applied to all instances associated with the security group immediately
 
+
+#### What is Amazon EBS? 
+
+It stands for Amazon Elastic Block Store, it is a durable, detachable, high-performance block-storage servuce designed for EC2. It essentially work as an external hard drive, it can provide low latency and is able to run almost any computer requirements.
+
 --------
 #### 1.2: Identify design principles of the AWS Cloud
 #### Knowledge of: AWS Well-Architected Framework
@@ -242,7 +247,6 @@ A security group serves as a virtual firewall that controls access to your insta
 - What is serverless computing and its use cases? 
 - What are some of the popular AWS computing services?
 - What is AWS Lambda?
-- What is Amazon ECS?
 - How does AWS Fargate differ from Amazon EC2?
 - What are the benefits of using AWS Elastic Beanstalk?
 - How does EC2 demonstrate elasticity?
