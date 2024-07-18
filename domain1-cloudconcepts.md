@@ -10,21 +10,21 @@
 - Understanding the advantages of high availability, elasticity, and agility
 
 <!-- Type your questions and answers below -->
-- What is Cloud Computing? Cloud computing offers pay-as-you-go IT resource delivery over the internet on demand. This enables businesses to invest only the necessary resources in accordance with demand, rather than having to purchase all technology resources up front.
+###- What is Cloud Computing? 
+Cloud computing offers pay-as-you-go IT resource delivery over the internet on demand. This enables businesses to invest only the necessary resources in accordance with demand, rather than having to purchase all technology resources up front.
 
-- What are the three deployment models for cloud computing, their definitions, and uses?
+###- What are the three deployment models for cloud computing, their definitions, and uses?
 
-  There are cloud-based deployment model where one can migrate existing applications to the cloud, or you can design and build new applications in the cloud. You can build those applications on low-level infrastructure that requires your IT staff to manage them. Alternatively, you can build them using higher-level services that reduce the management, architecting, and scaling requirements of the core infrastructure.
+  Cloud-based deployment model:
+  Where one can migrate existing applications to the cloud, or you can design and build new applications in the cloud. You can build those applications on low-level infrastructure that requires your IT staff to manage them. Alternatively, you can build them using higher-level services that reduce the management, architecting, and scaling requirements of the core infrastructure.
+  On-premises deployment/rivate cloud deployment:
+  In this model, resources are deployed on premises by using virtualization and resource management tools.For example, you might have applications that run on technology that is fully kept in your on-premises data center. Though this model is much like legacy IT infrastructure, its incorporation of application management and virtualization technologies helps to increase resource utilization.
+  Hybrid deployment:
+  Cloud-based resources are connected to on-premises infrastructure. You might want to use this approach in a number of situations. For example, you have legacy applications that are better maintained on premises, or government regulations require your business to keep certain records on premises.For example, suppose that a company wants to use cloud services that can automate batch data processing and analytics. However, the company has several legacy applications that are more suitable on premises and will not be migrated to the cloud. With a hybrid deployment, the company would be able to keep the legacy applications on premises while benefiting from the data and analytics services that run in the cloud.
 
-There are On-premises deployment which is also known as a private cloud deployment. In this model, resources are deployed on premises by using virtualization and resource management tools.
-For example, you might have applications that run on technology that is fully kept in your on-premises data center. Though this model is much like legacy IT infrastructure, its incorporation of application management and virtualization technologies helps to increase resource utilization.
-
-In a hybrid deployment, cloud-based resources are connected to on-premises infrastructure. You might want to use this approach in a number of situations. For example, you have legacy applications that are better maintained on premises, or government regulations require your business to keep certain records on premises.
-For example, suppose that a company wants to use cloud services that can automate batch data processing and analytics. However, the company has several legacy applications that are more suitable on premises and will not be migrated to the cloud. With a hybrid deployment, the company would be able to keep the legacy applications on premises while benefiting from the data and analytics services that run in the cloud.
-
-
-- What are the Benefits of cloud computing and their definitions?
-.Trade upfront expense for variable expense
+###- What are the Benefits of cloud computing and their definitions?
+  
+.Exchange upfront expense for variable expense
 Upfront expense refers to data centers, physical servers, and other resources that you would need to invest in before using them. Variable expense means you only pay for computing resources you consume instead of investing heavily in data centers and servers before you know how you’re going to use them.
 By taking a cloud computing approach that offers the benefit of variable expense, companies can implement innovative solutions while saving on costs.
 
