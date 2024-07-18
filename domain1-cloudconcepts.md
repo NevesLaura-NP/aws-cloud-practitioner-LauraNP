@@ -20,7 +20,10 @@ Cloud computing offers pay-as-you-go IT resource delivery over the internet on d
   On-premises deployment/rivate cloud deployment:
   In this model, resources are deployed on premises by using virtualization and resource management tools.For example, you might have applications that run on technology that is fully kept in your on-premises data center. Though this model is much like legacy IT infrastructure, its incorporation of application management and virtualization technologies helps to increase resource utilization.
   Hybrid deployment:
-  Cloud-based resources are connected to on-premises infrastructure. You might want to use this approach in a number of situations. For example, you have legacy applications that are better maintained on premises, or government regulations require your business to keep certain records on premises.For example, suppose that a company wants to use cloud services that can automate batch data processing and analytics. However, the company has several legacy applications that are more suitable on premises and will not be migrated to the cloud. With a hybrid deployment, the company would be able to keep the legacy applications on premises while benefiting from the data and analytics services that run in the cloud.
+  Cloud-based resources are connected to on-premises infrastructure. You might want to use this approach in a number of situations. For example, you have legacy applications that are better maintained on premises, or government regulations require your business to keep certain records on premises.
+
+#### When would you consider a hybrid deployment model?
+One can utilize the hybrid model when there is a need to utilize on premises technology and also utilize softwares and process in the cloud.For example, suppose that a company wants to use cloud services that can automate batch data processing and analytics. However, the company has several legacy applications that are more suitable on premises and will not be migrated to the cloud. With a hybrid deployment, the company would be able to keep the legacy applications on premises while benefiting from the data and analytics services that run in the cloud.
 
 #### What are the Benefits of cloud computing and their definitions?
   
@@ -184,7 +187,6 @@ Although Elastic Load Balancing and Amazon EC2 Auto Scaling are separate service
 - What is an instance and its use cases?
 - What are containers and their advantages?
 - What is serverless computing and its use cases? 
-- When would you consider a hybrid deployment model?
 - What are some of the popular AWS computing services?
 - What is AWS Lambda?
 - What is Amazon ECS?
