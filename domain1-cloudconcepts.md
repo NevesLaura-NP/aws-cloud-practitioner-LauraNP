@@ -198,7 +198,11 @@ Dedicated Hosts are physical servers with Amazon EC2 instance capacity that is f
 You can use your existing per-socket, per-core, or per-VM software licenses to help maintain license compliance. You can purchase On-Demand Dedicated Hosts and Dedicated Hosts Reservations. Of all the Amazon EC2 options that were covered, Dedicated Hosts are the most expensive.
 
 
+#### What is an AWS Availability Zone?
+  An Availability Zone is a single data center or a group of data centers within a Region. Availability Zones are located tens of miles apart from each other. This is close enough to have low latency (the time between when content requested and received) between Availability Zones. However, if a disaster occurs in one part of the Region, they are distant enough to reduce the chance that multiple Availability Zones are affected.
 
+#### How do AWS Edge locations enhance the performance of Amazon CloudFront?
+  Edge locations are separate from Regions, so you can push content from inside a Region to a collection of Edge locations around the world, in order to accelerate communication and content delivery. AWS Edge locations, also run more than just CloudFront. They run a domain name service, or DNS, known as Amazon Route 53, helping direct customers to the correct web locations with reliably low latency. here's the key points. Number one, Regions are geographically isolated areas, where you can access services needed to run your enterprise. Number two, Regions contain Availability Zones, that allow you to run across physically separated buildings, tens of miles of separation, while keeping your application logically unified. Availability Zones help you solve high availability and disaster recovery scenarios, without any additional effort on your part, and number three, AWS Edge locations run Amazon CloudFront to help get content closer to your customers, no matter where they are in the world.
 
 
 --------
@@ -233,7 +237,8 @@ You can use your existing per-socket, per-core, or per-VM software licenses to h
 
 - What is the primary purpose of AWS Regions in the global infrastructure?
 - Describe the function of Amazon CloudFront in AWS's architecture.
-- How do AWS Edge locations enhance the performance of Amazon CloudFront?
+
+But what if your business wants to use, AWS services inside their own building? Well sure. AWS can do that for you. Introducing AWS Outposts, where AWS will basically install a fully operational mini Region, right inside your own data center. That's owned and operated by AWS, using 100% of AWS functionality, but isolated within your own building. It's not a solution most customers need, but if you have specific problems that can only be solved by staying in your own building, we understand, AWS Outposts can help. 
 - Explain how Amazon Route 53 integrates with AWS Edge locations to enhance user experiences.
 - What are the advantages of using AWS Outposts for local data processing needs?
 - How are AWS Lambda and AWS Outposts different in what they offer for cloud computing?
@@ -243,7 +248,6 @@ You can use your existing per-socket, per-core, or per-VM software licenses to h
 - Why is data sovereignty important in AWS Regions?
 - How do AWS Regions enhance disaster recovery capabilities?
 - What are the four main factors to consider when choosing an AWS Region? 1. The location of the user, 2.
-- What is an AWS Availability Zone?
 - What is the purpose of having multiple Availability Zones within an AWS Region?
 - How does AWS ensure low latency communication between Availability Zones?
 - Why is it important to run EC2 instances across multiple AZs?
