@@ -204,6 +204,15 @@ You can use your existing per-socket, per-core, or per-VM software licenses to h
 #### How do AWS Edge locations enhance the performance of Amazon CloudFront?
   Edge locations are separate from Regions, so you can push content from inside a Region to a collection of Edge locations around the world, in order to accelerate communication and content delivery. AWS Edge locations, also run more than just CloudFront. They run a domain name service, or DNS, known as Amazon Route 53, helping direct customers to the correct web locations with reliably low latency. here's the key points. Number one, Regions are geographically isolated areas, where you can access services needed to run your enterprise. Number two, Regions contain Availability Zones, that allow you to run across physically separated buildings, tens of miles of separation, while keeping your application logically unified. Availability Zones help you solve high availability and disaster recovery scenarios, without any additional effort on your part, and number three, AWS Edge locations run Amazon CloudFront to help get content closer to your customers, no matter where they are in the world.
 
+#### What is AWS Elastic Beanstalk used for?
+  AWS Elastic Beanstalk is a service that helps you provision Amazon EC2-based environments. Instead of clicking around the console or writing multiple commands to build out your network, EC2 instances, scaling and Elastic Load Balancers, you can instead provide your application code and desired configurations to the AWS Elastic Beanstalk service, which then takes that information and builds out your environment for you. AWS Elastic Beanstalk also makes it easy to save environment configurations, so they can be deployed again easily. AWS Elastic Beanstalk gives you the convenience of not having to provision and manage all of these pieces separately, while still giving you the visibility and control of the underlying resources. You get to focus on your business application, not the infrastructure.
+  With AWS Elastic Beanstalk, you provide code and configuration settings, and Elastic Beanstalk deploys the resources necessary to perform the following tasks:
+
+Adjust capacity
+Load balancing
+Automatic scaling
+Application health monitoring
+
 
 --------
 #### 1.2: Identify design principles of the AWS Cloud
@@ -260,17 +269,12 @@ You can use your existing per-socket, per-core, or per-VM software licenses to h
 - What are the main ways to interact with AWS services?
 - Why is automation important in cloud deployment?
 - What is the primary advantage of using AWS Elastic Beanstalk over manual methods like the AWS Management Console?
-- What is AWS Elastic Beanstalk used for?
 - How does AWS CloudFormation help in managing AWS resources?
 - What are the main components of AWS Global Infrastructure?
 - Which AWS services automatically run across multiple Availability Zones?
 - What is the recommended best practice for deploying infrastructure in AWS?
-
-
 - What is a Security Group in EC2?
 - What are the four main purchasing options for EC2 instances, and what are their key characteristics?
-
-
 - What is an Amazon Machine Image (AMI)?
 - How does EC2 integrate with other AWS services?
 - What are the different computing models available in AWS?
@@ -293,8 +297,6 @@ You can use your existing per-socket, per-core, or per-VM software licenses to h
 - How do security groups protect your EC2 instances?
 - What are the steps to launch an EC2 instance?
 - What is the importance of tagging in EC2?
-  
 - Can you automate EC2 scaling? Yes. The auto scaling function of EC2 can only scale horizontally; it cannot scale vertically. This indicates that while the quantity of EC2 can be created and terminated automatically, the scaling of already-existing EC2 cannot be done so automatically; instead, the user must take action.
-  
 - What security features does EC2 offer?
 - What are the benefits of using AMIs?
