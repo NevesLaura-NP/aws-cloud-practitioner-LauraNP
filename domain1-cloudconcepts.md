@@ -237,8 +237,6 @@ You can use your existing per-socket, per-core, or per-VM software licenses to h
 
 - What is the primary purpose of AWS Regions in the global infrastructure?
 - Describe the function of Amazon CloudFront in AWS's architecture.
-
-But what if your business wants to use, AWS services inside their own building? Well sure. AWS can do that for you. Introducing AWS Outposts, where AWS will basically install a fully operational mini Region, right inside your own data center. That's owned and operated by AWS, using 100% of AWS functionality, but isolated within your own building. It's not a solution most customers need, but if you have specific problems that can only be solved by staying in your own building, we understand, AWS Outposts can help. 
 - Explain how Amazon Route 53 integrates with AWS Edge locations to enhance user experiences.
 - What are the advantages of using AWS Outposts for local data processing needs?
 - How are AWS Lambda and AWS Outposts different in what they offer for cloud computing?
