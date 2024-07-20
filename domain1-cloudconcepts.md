@@ -177,9 +177,15 @@ AMIs are a required element to creating a EC2. It has three components. Template
 A security group serves as a virtual firewall that controls access to your instances. It is a way for you to filter the traffic that is allowed to reach your instances. Security Groups are based on rules that you can configure, it blocks all access unless one allow rule is in place for that traffic. The rules can be modified at any time and the new rule updates are automatically applied to all instances associated with the security group immediately
 
 
-#### What is Amazon EBS? 
+#### What is Amazon ECS? 
 
-It stands for Amazon Elastic Block Store, it is a durable, detachable, high-performance block-storage servuce designed for EC2. It essentially work as an external hard drive, it can provide low latency and is able to run almost any computer requirements.
+The Amazon Elastic Container Service (Amazon ECS) is highly scalable and high-performance container management system. It helps costumers new containers and manage them accross EC2 instances. Amazon ECS supports Docker containers. Docker is a software platform that packages software into containers. To manage your containers, you must install an open source Amazon ECS container agent on your EC2 instances. This agent is referred to as a container instance. You can run this agent on both Linux and Windows Amazon Machine Images(AMIs). Amazon ECS uses API calls to control Docker-enabled applications.
+
+#### What is AWS Lambda?
+   It is a serverless computing service that helps you to run code without provisioning or managing servers. You will pay only for the consumed compute time, and when your code ins't running you will pay no charges. With AWS Lambda one can run code for virtually any type of application or backend service, all with zero administration. You need only to upload your code, and Lambda manages everything required to run and scale your code with high availability. You can set up your code to automatically launch from other AWS services or call it directly from any web or mobile app.
+
+#### How does AWS Fargate differ from Amazon EC2?
+  AWS Fargate is a serveless compute engine for containers. It allocates the right amount of compute, which reduces the need to manage EC2 instances, cluster capacity, and scaling.
 
 --------
 #### 1.2: Identify design principles of the AWS Cloud
@@ -246,8 +252,6 @@ It stands for Amazon Elastic Block Store, it is a durable, detachable, high-perf
 - What are containers and their advantages?
 - What is serverless computing and its use cases? 
 - What are some of the popular AWS computing services?
-- What is AWS Lambda?
-- How does AWS Fargate differ from Amazon EC2?
 - What are the benefits of using AWS Elastic Beanstalk?
 - How does EC2 demonstrate elasticity?
 - What level of control do users have over EC2 instances?
