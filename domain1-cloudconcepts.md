@@ -187,6 +187,18 @@ The Amazon Elastic Container Service (Amazon ECS) is highly scalable and high-pe
 #### How does AWS Fargate differ from Amazon EC2?
   AWS Fargate is a serveless compute engine for containers. It allocates the right amount of compute, which reduces the need to manage EC2 instances, cluster capacity, and scaling.
 
+#### What are the benefits of using AMIs?
+  Repeatability:
+  Instances that are launched from the same AMI are exact replicas of one another. As a result, it greatly facilitates building clusters of similar instances or recreating compute environments.
+  Reusability:
+  AMIs package the full configuration and content of an EC2 instance such that it can be used over and over again, with efficiency and precision.
+  Recoverability:
+  An AMI is perfect for replacing failed machines with new instances that are created from the same AMI
+  Marketplace Solutions:
+  Suppose that you are looking for software solution from a specific vendor. An AMI probably exists on the marketplace that you can launch to implement that solution on an EC2 instance. Additionally, authorized software vendors can create AMIs and also sell them there
+  Backups:
+  AMIs provide a great way to back up a complete EC2 instance configuration, which you can use to launch a replacement instance in the event of a failure.
+
 --------
 #### 1.2: Identify design principles of the AWS Cloud
 #### Knowledge of: AWS Well-Architected Framework
@@ -265,4 +277,3 @@ The Amazon Elastic Container Service (Amazon ECS) is highly scalable and high-pe
 - What are the steps to launch an EC2 instance?
 - Can you automate EC2 scaling? Yes. The auto scaling function of EC2 can only scale horizontally; it cannot scale vertically. This indicates that while the quantity of EC2 can be created and terminated automatically, the scaling of already-existing EC2 cannot be done so automatically; instead, the user must take action.
 - What security features does EC2 offer?
-- What are the benefits of using AMIs?
