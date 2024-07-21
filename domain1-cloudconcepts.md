@@ -153,15 +153,8 @@ You can use your existing per-socket, per-core, or per-VM software licenses to h
   Edge locations are separate from Regions, so you can push content from inside a Region to a collection of Edge locations around the world, in order to accelerate communication and content delivery. AWS Edge locations, also run more than just CloudFront. They run a domain name service, or DNS, known as Amazon Route 53, helping direct customers to the correct web locations with reliably low latency. here's the key points. Number one, Regions are geographically isolated areas, where you can access services needed to run your enterprise. Number two, Regions contain Availability Zones, that allow you to run across physically separated buildings, tens of miles of separation, while keeping your application logically unified. Availability Zones help you solve high availability and disaster recovery scenarios, without any additional effort on your part, and number three, AWS Edge locations run Amazon CloudFront to help get content closer to your customers, no matter where they are in the world.
 
 #### What is AWS Elastic Beanstalk used for?
-  AWS Elastic Beanstalk is a service that helps you provision Amazon EC2-based environments. Instead of clicking around the console or writing multiple commands to build out your network, EC2 instances, scaling and Elastic Load Balancers, you can instead provide your application code and desired configurations to the AWS Elastic Beanstalk service, which then takes that information and builds out your environment for you. AWS Elastic Beanstalk also makes it easy to save environment configurations, so they can be deployed again easily. AWS Elastic Beanstalk gives you the convenience of not having to provision and manage all of these pieces separately, while still giving you the visibility and control of the underlying resources. You get to focus on your business application, not the infrastructure.
-  With AWS Elastic Beanstalk, you provide code and configuration settings, and Elastic Beanstalk deploys the resources necessary to perform the following tasks:
-
-Adjust capacity
-Load balancing
-Automatic scaling
-Application health monitoring
-
-#### What is an instance and its use cases?
+  AWS Elastic Beanstalk is a service that helps you provision Amazon EC2-based environments. Instead of clicking around the console or writing multiple commands to build out your network, EC2 instances, scaling and Elastic Load Balancers, you can instead provide your application code and desired configurations to the AWS Elastic Beanstalk service, which then takes that information and builds out your environment for you. AWS Elastic Beanstalk also makes it easy to save environment configurations, so they can be deployed again easily. 
+  
 
 Amazon EC2 instance types(opens in a new tab) are optimized for different tasks. When selecting an instance type, consider the specific needs of your workloads and applications. This might include requirements for compute, memory, or storage capabilities.
 Each instance type is grouped under an instance family and are optimized for certain types of tasks. Instance types offer varying combinations of CPU, memory, storage, and networking capacity, and give you the flexibility to choose the appropriate mix of resources for your applications. The different instance families in EC2 are general purpose, compute optimized, memory optimized, accelerated computing, and storage optimized. 
@@ -230,7 +223,7 @@ Amazon VPC enables you to provision an isolated section of the AWS Cloud. In thi
   Private subnets contain resources that should be accessible only through your private network, such as a database that contains customers’ personal information and order histories.
   In a VPC, subnets can communicate with each other. For example, you might have an application that involves Amazon EC2 instances in a public subnet communicating with databases that are located in a private subnet.
 
-#### What factors should you consider when choosing a region for your EC2 instance?
+#### What factors should you consider when choosing a region for your EC2 instance? What are the four main factors to consider when choosing an AWS Region? 
 When determining the right Region for your services, data, and applications, consider the following four factors:
 Compliance with data governance and legal requirements
 
@@ -266,8 +259,37 @@ IAM users, groups, and roles
 IAM policies
 Multi-factor authentication  
 
+ #### What level of control do users have over EC2 instances?
+  Depending on the IAM role an root user can launch servers when needed and terminate or stop instances when they are no longer needed. There is full control over the guest operating system. One can launch instances of any size into an Availability Zone anywhere in the world and can control traffic through Security Groups and Elastic Load Balancing.
 
+#### How does EC2 demonstrate elasticity?
+  One can use the Amazon EC2 to increase and decrease capacity within minutes, not hours or days. You can comission one, hundreds, or even thousands of server instances simultaneously. You can also use Amazon EC2 Auto Scaling to maintain availability of your Amazon EC2 fleet and automatically scale your fleet up and down depending on your needs to maximize performance and maximize cost.
 
+#### How does EC2 integrate with other AWS services?
+Amazon EC2 is integrated with most AWS services. These services could include Amazon S3, Amazon RDS, and Amazon VPC. This integration provides a complete, secure solution for computing, query processing, and cloud storage accross a wide range of applications. One can access and manage these integrations through the Control 
+
+#### What are the benefits of using AWS Elastic Beanstalk?
+  AWS Elastic Beanstalk gives you the convenience of not having to provision and manage all of these pieces separately, while still giving you the visibility and control of the underlying resources. You get to focus on your business application, not the infrastructure.
+  With AWS Elastic Beanstalk, you provide code and configuration settings, and Elastic Beanstalk deploys the resources necessary to perform the following tasks:
+
+Adjust capacity
+Load balancing
+Automatic scaling
+Application health monitoring
+
+#### What is serverless computing and its use cases?
+  Serverless Computing gives you the ability to run code without provisioning or managing servers. Serverless computing features automatic scaling, built-in high availability, and a pay-for-use billing model to increase agility and optimize costs. Serverless computing also eliminates infrastructure management tasks like capacity provisioning and patching, so you can focus on writing code that serves clients. Serverless use cases include:
+  .File Processing
+  .Web Applications
+  .Mobile Backends
+  . Cron jobs(scheduling computer tasks)
+
+#### What are containers and their advantages?
+  Containers are a method of OS virtualization that you can use to run an application and its dependencies in resource-isolated processes. By using containers, you can package an application's code, configurations, and dependencies into simple building blocks that deliver environmental consistency, operationa efficiency, developer productivity, and version control. Containers are smaller than virtual machines and do not contain an entire operating system. Instea, containers share a virtualized OS and run as resource-isolated processes, which ensure quick, reliable, and consistent deployments. Containers hold everything that the software needs to run, such as libraries, system tools, code, and the runtime. Container use cases are:
+  .Building Microservices architecture
+  .Video rendering services
+  .Quick development and deployment
+  
 --------
 #### 1.2: Identify design principles of the AWS Cloud
 #### Knowledge of: AWS Well-Architected Framework
@@ -310,7 +332,6 @@ Another feature of Route 53 is the ability to manage the DNS records for domain 
 - What is high availability?
 - What are the benefits of AWS having a global infrastructure with multiple regions?
 - How do AWS Regions enhance disaster recovery capabilities?
-- What are the four main factors to consider when choosing an AWS Region? 1. The location of the user, 2.
 - What is the purpose of having multiple Availability Zones within an AWS Region?
 - How does AWS ensure low latency communication between Availability Zones?
 - Why is it important to run EC2 instances across multiple AZs?
@@ -330,12 +351,6 @@ Another feature of Route 53 is the ability to manage the DNS records for domain 
 - Which AWS services automatically run across multiple Availability Zones?
 - What is the recommended best practice for deploying infrastructure in AWS?
 - What are the four main purchasing options for EC2 instances, and what are their key characteristics?
-- How does EC2 integrate with other AWS services?
 - What are the different computing models available in AWS?
-- What are containers and their advantages?
-- What is serverless computing and its use cases? 
 - What are some of the popular AWS computing services?
-- What are the benefits of using AWS Elastic Beanstalk?
-- How does EC2 demonstrate elasticity?
-- What level of control do users have over EC2 instances?
-- How does EC2 integrate with other AWS services?
+  AWS S3, AWS VPC, AWS Lambda, AWS Beanstalk
