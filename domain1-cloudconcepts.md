@@ -199,6 +199,75 @@ The Amazon Elastic Container Service (Amazon ECS) is highly scalable and high-pe
   Backups:
   AMIs provide a great way to back up a complete EC2 instance configuration, which you can use to launch a replacement instance in the event of a failure.
 
+#### What security features does EC2 offer?
+  EC2 offers Security Groups which serve as a firewall for instances. The rules of the security group filters the traffic that is allowed to access the instances. All the rules from all security groups that are attached to an instance are evaluated before traffic is allowed to pass through.
+
+#### Can you automate EC2 scaling?
+Yes. The Amazon Auto Scaling helps you maintain scale availability and lets you automatically add or remove EC2 instances according to conditions you define.
+
+#### What are the steps to launch an EC2 instance?
+  1. Instance Name and Tags
+  2. Select Amazon Machine Image
+  3. Select Instance Type
+  4. Key Pair
+  5. Network Settings
+  6. Configure Storage
+  7. Advanced Details
+#### How do security groups protect your EC2 instances?
+Security Groups are based on rules that you can configure, it blocks all access unless one allow rule is in place for that traffic. The rules can be modified at any time and the new rule updates are automatically applied to all instances associated with the security group immediately
+
+#### Why is data sovereignty important in AWS Regions?
+  You might have government compliance requirements that your financial information in Frankfurt cannot leave Germany. Any data stored in the Frankfurt Region never leaves the Frankfurt Region, or data in the London region never leaves London, or Sydney never leaves Sydney, unless you explicitly, with the right credentials and permissions, request the data be exported. 
+Regional data sovereignty is part of the critical design of AWS Regions. With data being subject to the local laws and statutes of the country where the Region lives. So with that understanding, that your data, your application, lives and runs in a Region, one of the first decisions you get to make is which Region you pick.
+
+#### What is the purpose of a VPC in Amazon EC2?
+Imagine the millions of customers who use AWS services. Also, imagine the millions of resources that these customers have created, such as Amazon EC2 instances. Without boundaries around all of these resources, network traffic would be able to flow between them unrestricted. 
+Amazon VPC enables you to provision an isolated section of the AWS Cloud. In this isolated section, you can launch resources in a virtual network that you define. Within a virtual private cloud (VPC), you can organize your resources into subnets. 
+
+#### What are subnets and their role in EC2?
+  A subnet is a section of a VPC in which you can group resources based on security or operational needs. Subnets can be public or private.
+  Public subnets contain resources that need to be accessible by the public, such as an online store’s website.
+  Private subnets contain resources that should be accessible only through your private network, such as a database that contains customers’ personal information and order histories.
+  In a VPC, subnets can communicate with each other. For example, you might have an application that involves Amazon EC2 instances in a public subnet communicating with databases that are located in a private subnet.
+
+#### What factors should you consider when choosing a region for your EC2 instance?
+When determining the right Region for your services, data, and applications, consider the following four factors:
+Compliance with data governance and legal requirements
+
+Depending on your company and location, you might need to run your data out of specific areas. For example, if your company requires all of its data to reside within the boundaries of the UK, you would choose the London Region.
+Not all companies have location-specific data regulations, so you might need to focus more on the other three factors.
+
+Proximity to your customers
+
+Selecting a Region that is close to your customers will help you to get content to them faster. For example, your company is based in Washington, DC, and many of your customers live in Singapore. You might consider running your infrastructure in the Northern Virginia Region to be close to company headquarters, and run your applications from the Singapore Region.
+
+Available services within a Region
+
+Sometimes, the closest Region might not have all the features that you want to offer to customers. AWS is frequently innovating by creating new services and expanding on features within existing services. However, making new services available around the world sometimes requires AWS to build out physical hardware one Region at a time. 
+Suppose that your developers want to build an application that uses Amazon Braket (AWS quantum computing platform). As of this course, Amazon Braket is not yet available in every AWS Region around the world, so your developers would have to run it in one of the Regions that already offers it.
+
+Pricing
+
+Suppose that you are considering running applications in both the United States and Brazil. The way Brazil’s tax structure is set up, it might cost 50% more to run the same workload out of the São Paulo Region compared to the Oregon Region. You will learn in more detail that several factors determine pricing, but for now know that the cost of services can vary from Region to Region.
+
+#### What is an AWS Region?
+  A Region is a physical location around the world where AWS clusters data centers. It is where all of the pieces and parts of your application live.
+
+#### What are the main architectural components of Amazon EC2?
+  Regions
+  VPC
+  Subnets
+  Security Groups
+
+#### What security features does Amazon EC2 provide?
+  Amazon EC2 provides with Security groups and IAM roles that enables you to manage access to AWS services and resources securely. IAM gives you the flexibility to configure access based on your company’s specific operational and security needs. You do this by using a combination of IAM features, which are explored in detail in this lesson:
+
+IAM users, groups, and roles
+IAM policies
+Multi-factor authentication  
+
+
+
 --------
 #### 1.2: Identify design principles of the AWS Cloud
 #### Knowledge of: AWS Well-Architected Framework
@@ -232,12 +301,14 @@ The Amazon Elastic Container Service (Amazon ECS) is highly scalable and high-pe
 - What is the primary purpose of AWS Regions in the global infrastructure?
 - Describe the function of Amazon CloudFront in AWS's architecture.
 - Explain how Amazon Route 53 integrates with AWS Edge locations to enhance user experiences.
+  Amazon Route 53 gives developers and businesses a reliable way to route end users to internet applications hosted in AWS. 
+Amazon Route 53 connects user requests to infrastructure running in AWS (such as Amazon EC2 instances and load balancers). It can route users to infrastructure outside of AWS.
+
+Another feature of Route 53 is the ability to manage the DNS records for domain names. You can register new domain names directly in Route 53. You can also transfer DNS records for existing domain names managed by other domain registrars. This enables you to manage all of your domain names within a single location.
 - What are the advantages of using AWS Outposts for local data processing needs?
 - How are AWS Lambda and AWS Outposts different in what they offer for cloud computing?
 - What is high availability?
 - What are the benefits of AWS having a global infrastructure with multiple regions?
-- What is an AWS Region?
-- Why is data sovereignty important in AWS Regions?
 - How do AWS Regions enhance disaster recovery capabilities?
 - What are the four main factors to consider when choosing an AWS Region? 1. The location of the user, 2.
 - What is the purpose of having multiple Availability Zones within an AWS Region?
@@ -268,12 +339,3 @@ The Amazon Elastic Container Service (Amazon ECS) is highly scalable and high-pe
 - How does EC2 demonstrate elasticity?
 - What level of control do users have over EC2 instances?
 - How does EC2 integrate with other AWS services?
-- What security features does Amazon EC2 provide?
-- What are the main architectural components of Amazon EC2?
-- What factors should you consider when choosing a region for your EC2 instance?
-- What is the purpose of a VPC in Amazon EC2?
-- What are subnets and their role in EC2?
-- How do security groups protect your EC2 instances?
-- What are the steps to launch an EC2 instance?
-- Can you automate EC2 scaling? Yes. The auto scaling function of EC2 can only scale horizontally; it cannot scale vertically. This indicates that while the quantity of EC2 can be created and terminated automatically, the scaling of already-existing EC2 cannot be done so automatically; instead, the user must take action.
-- What security features does EC2 offer?
