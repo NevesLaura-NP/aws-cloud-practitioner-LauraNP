@@ -400,8 +400,7 @@ Certainly! Let's go through each question step by step:
     AWS services such as Amazon EC2, Amazon RDS (Relational Database Service), and Amazon S3 (Simple Storage Service) automatically replicate data and distribute workloads across multiple Availability Zones within a region for high availability and fault tolerance.
 
 #### What is the recommended best practice for deploying infrastructure in AWS?**
-
-    The recommended best practice is to use AWS CloudFormation or another infrastructure as code (IaC) tool to automate the deployment of infrastructure. This approach ensures consistency, scalability, and repeatability in deployments, and it facilitates version control and auditing of changes.
+ The recommended best practice is to use AWS Cloudformation or another infrastructure as code (IaC) tool to automate the deployment of infrastructure. This approach ensures consistency, scalability, and repeatability in deployments, and it facilitates version control and auditing of changes.
 
 #### What are the four main purchasing options for EC2 instances, and what are their key characteristics?
 
