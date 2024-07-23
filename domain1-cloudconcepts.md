@@ -290,83 +290,62 @@ Application health monitoring
   .Video rendering services
   .Quick development and deployment
 
-Certainly! Let's go through each question step by step:
-
 #### What is the primary purpose of AWS Regions in the global infrastructure?
-
-   AWS Regions are physical locations around the world where AWS deploys its infrastructure. The primary purpose of AWS Regions is to provide geographic diversity and redundancy. They allow customers to deploy resources in multiple geographic areas to achieve lower latency, comply with data sovereignty requirements, and enhance fault tolerance and high availability.
+AWS Regions are physical locations around the world where AWS deploys its infrastructure. The primary purpose of AWS Regions is to provide geographic diversity and redundancy. They allow customers to deploy resources in multiple geographic areas to achieve lower latency, comply with data sovereignty requirements, and enhance fault tolerance and high availability.
 
 #### Describe the function of Amazon CloudFront in AWS's architecture.
-
-   Amazon CloudFront is a content delivery network (CDN) service provided by AWS. Its main function is to deliver content (such as web pages, videos, applications) with low latency and high transfer speeds. CloudFront caches content at edge locations located around the world, reducing the load on origin servers and improving user experience by serving content from locations closer to the end-users.
+Amazon CloudFront is a content delivery network (CDN) service provided by AWS. Its main function is to deliver content (such as web pages, videos, applications) with low latency and high transfer speeds. CloudFront caches content at edge locations located around the world, reducing the load on origin servers and improving user experience by serving content from locations closer to the end-users.
 
 #### Explain how Amazon Route 53 integrates with AWS Edge locations to enhance user experiences.
-
-   Amazon Route 53 is a scalable domain name system (DNS) web service. It integrates with AWS Edge locations by routing end-user requests to the closest available AWS Edge location, which can then serve the requested content through services like CloudFront. This integration enhances user experiences by reducing latency and improving responsiveness for global applications.
+Amazon Route 53 is a scalable domain name system (DNS) web service. It integrates with AWS Edge locations by routing end-user requests to the closest available AWS Edge location, which can then serve the requested content through services like CloudFront. This integration enhances user experiences by reducing latency and improving responsiveness for global applications.
 
 #### What are the advantages of using AWS Outposts for local data processing needs?
-
-   AWS Outposts bring native AWS services, infrastructure, and operating models to virtually any customer on-premises facility. Advantages include seamless integration with AWS services, low latency for local data processing, support for workloads that need to remain on-premises due to specific requirements, and consistent operational experience across cloud and on-premises environments.
+AWS Outposts bring native AWS services, infrastructure, and operating models to virtually any customer on-premises facility. Advantages include seamless integration with AWS services, low latency for local data processing, support for workloads that need to remain on-premises due to specific requirements, and consistent operational experience across cloud and on-premises environments.
 
 #### How are AWS Lambda and AWS Outposts different in what they offer for cloud computing?
-
-   AWS Lambda is a serverless compute service that lets you run code without provisioning or managing servers. It automatically scales based on demand and charges you only for the compute time consumed. AWS Outposts, on the other hand, extends AWS infrastructure to on-premises locations, allowing you to run AWS services locally for applications that require low-latency data processing or need to meet specific compliance requirements.
+AWS Lambda is a serverless compute service that lets you run code without provisioning or managing servers. It automatically scales based on demand and charges you only for the compute time consumed. AWS Outposts, on the other hand, extends AWS infrastructure to on-premises locations, allowing you to run AWS services locally for applications that require low-latency data processing or need to meet specific compliance requirements.
 
 #### What is high availability?
-
-   High availability refers to a system or service that is designed to be operational and accessible for a high percentage of the time, usually 99.99% or higher. It typically involves redundancy, fault tolerance, and rapid failover mechanisms to minimize downtime and ensure continuous operation.
+High availability refers to a system or service that is designed to be operational and accessible for a high percentage of the time, usually 99.99% or higher. It typically involves redundancy, fault tolerance, and rapid failover mechanisms to minimize downtime and ensure continuous operation.
 
 #### What are the benefits of AWS having a global infrastructure with multiple regions?
-
-   The benefits include improved latency for end-users, compliance with data sovereignty requirements, enhanced fault tolerance and disaster recovery capabilities, and the ability to deploy applications closer to customers worldwide. It also provides flexibility to scale resources geographically as business needs evolve.
+The benefits include improved latency for end-users, compliance with data sovereignty requirements, enhanced fault tolerance and disaster recovery capabilities, and the ability to deploy applications closer to customers worldwide. It also provides flexibility to scale resources geographically as business needs evolve.
 
 #### How do AWS Regions enhance disaster recovery capabilities?
-
-   AWS Regions allow you to deploy resources in geographically separate locations. This geographical diversity is crucial for disaster recovery because it ensures that if one region experiences a service disruption (e.g., due to a natural disaster or outage), applications and data can failover to resources in another region, maintaining continuity of operations.
+AWS Regions allow you to deploy resources in geographically separate locations. This geographical diversity is crucial for disaster recovery because it ensures that if one region experiences a service disruption (e.g., due to a natural disaster or outage), applications and data can failover to resources in another region, maintaining continuity of operations.
 
 #### What is the purpose of having multiple Availability Zones within an AWS Region?
-
-   Availability Zones (AZs) are distinct locations within a region that are engineered to be isolated from failures in other AZs. The purpose of having multiple AZs is to provide high availability and fault tolerance. By distributing resources across AZs, you can protect applications and data from localized failures and ensure that your services remain operational even if one AZ goes down.
+Availability Zones (AZs) are distinct locations within a region that are engineered to be isolated from failures in other AZs. The purpose of having multiple AZs is to provide high availability and fault tolerance. By distributing resources across AZs, you can protect applications and data from localized failures and ensure that your services remain operational even if one AZ goes down.
 
 #### How does AWS ensure low latency communication between Availability Zones?
-
-    AWS connects Availability Zones within a region through low-latency links in its global network infrastructure. This network design ensures fast and reliable communication between AZs, enabling synchronous replication for services like databases and allowing for rapid data transfer during failover scenarios.
+AWS connects Availability Zones within a region through low-latency links in its global network infrastructure. This network design ensures fast and reliable communication between AZs, enabling synchronous replication for services like databases and allowing for rapid data transfer during failover scenarios.
 
 #### Why is it important to run EC2 instances across multiple AZs?
-
-    Running EC2 instances across multiple AZs improves fault tolerance and high availability. If one AZ becomes unavailable, instances in other AZs can continue to operate without disruption. This setup also allows for load balancing and scaling across multiple availability zones to distribute traffic and optimize performance.
+Running EC2 instances across multiple AZs improves fault tolerance and high availability. If one AZ becomes unavailable, instances in other AZs can continue to operate without disruption. This setup also allows for load balancing and scaling across multiple availability zones to distribute traffic and optimize performance.
 
 #### How do regional AWS services enhance high availability?
-
-    Regional AWS services are designed to operate across multiple Availability Zones within a region. They automatically replicate data and distribute resources across AZs, which enhances fault tolerance and ensures that services remain available even if there are failures in one AZ. This regional redundancy is key to achieving high availability in AWS deployments.
+Regional AWS services are designed to operate across multiple Availability Zones within a region. They automatically replicate data and distribute resources across AZs, which enhances fault tolerance and ensures that services remain available even if there are failures in one AZ. This regional redundancy is key to achieving high availability in AWS deployments.
 
 #### What is the purpose of Amazon CloudFront?
-
-    Amazon CloudFront is a content delivery network (CDN) service that accelerates the delivery of your websites, APIs, video content, and other web assets to users across the globe. It improves performance by caching content at edge locations closest to end-users, reducing latency and lowering the load on origin servers.
+Amazon CloudFront is a content delivery network (CDN) service that accelerates the delivery of your websites, APIs, video content, and other web assets to users across the globe. It improves performance by caching content at edge locations closest to end-users, reducing latency and lowering the load on origin servers.
 
 #### What are edge locations in AWS?
-
-    Edge locations are endpoints for AWS CloudFront and AWS Lambda Edge. They are located in major cities around the world and are used for caching content closer to end-users to improve latency and data transfer speeds. Edge locations are part of AWS's global network infrastructure.
+Edge locations are endpoints for AWS CloudFront and AWS Lambda Edge. They are located in major cities around the world and are used for caching content closer to end-users to improve latency and data transfer speeds. Edge locations are part of AWS's global network infrastructure.
 
 #### What is AWS Outposts?
-
-    AWS Outposts is a fully managed service that extends AWS infrastructure, AWS services, APIs, and tools to virtually any customer on-premises facility. It allows you to run compute and storage locally, providing a consistent hybrid experience and seamless integration with AWS services in the cloud.
+AWS Outposts is a fully managed service that extends AWS infrastructure, AWS services, APIs, and tools to virtually any customer on-premises facility. It allows you to run compute and storage locally, providing a consistent hybrid experience and seamless integration with AWS services in the cloud.
 
 #### How do Availability Zones within AWS Regions contribute to disaster recovery and high availability?
-
-    Availability Zones within AWS Regions contribute to disaster recovery and high availability by providing physically separate locations with independent power, cooling, and networking. This isolation helps protect applications and data from failures and allows for redundant deployments that can automatically failover to another AZ in case of disruption.
+Availability Zones within AWS Regions contribute to disaster recovery and high availability by providing physically separate locations with independent power, cooling, and networking. This isolation helps protect applications and data from failures and allows for redundant deployments that can automatically failover to another AZ in case of disruption.
 
 #### How do AWS Edge locations and Amazon CloudFront improve content delivery?
-
-    AWS Edge locations host CloudFront caches, allowing content to be delivered with lower latency and higher transfer speeds to end-users. When users request content, CloudFront serves it from the nearest edge location rather than fetching it from the origin server, reducing latency and improving overall performance.
+AWS Edge locations host CloudFront caches, allowing content to be delivered with lower latency and higher transfer speeds to end-users. When users request content, CloudFront serves it from the nearest edge location rather than fetching it from the origin server, reducing latency and improving overall performance.
 
 #### What is an API in the context of AWS?
-
-    In AWS, an API (Application Programming Interface) is a set of rules and protocols that allows one software application to communicate with another. AWS provides APIs for interacting with its services programmatically, enabling automation, integration, and orchestration of cloud resources.
+In AWS, an API (Application Programming Interface) is a set of rules and protocols that allows one software application to communicate with another. AWS provides APIs for interacting with its services programmatically, enabling automation, integration, and orchestration of cloud resources.
 
 #### What is the primary method of interacting with AWS services?
-
-    The primary method of interacting with AWS services is through the AWS Management Console, a web-based interface that allows you to access and manage AWS resources using a graphical user interface (GUI).
+The primary method of interacting with AWS services is through the AWS Management Console, a web-based interface that allows you to access and manage AWS resources using a graphical user interface (GUI).
 
 #### What are the main ways to interact with AWS services?
 Besides the Management Console, you can interact with AWS services using:
@@ -391,15 +370,13 @@ The main components include:
     - Regional Edge Caches: Caches for CloudFront content within AWS regions.
 
 #### Which AWS services automatically run across multiple Availability Zones?**
-
-    AWS services such as Amazon EC2, Amazon RDS (Relational Database Service), and Amazon S3 (Simple Storage Service) automatically replicate data and distribute workloads across multiple Availability Zones within a region for high availability and fault tolerance.
+AWS services such as Amazon EC2, Amazon RDS (Relational Database Service), and Amazon S3 (Simple Storage Service) automatically replicate data and distribute workloads across multiple Availability Zones within a region for high availability and fault tolerance.
 
 #### What is the recommended best practice for deploying infrastructure in AWS?**
  The recommended best practice is to use AWS Cloudformation or another infrastructure as code (IaC) tool to automate the deployment of infrastructure. This approach ensures consistency, scalability, and repeatability in deployments, and it facilitates version control and auditing of changes.
 
 #### What are the four main purchasing options for EC2 instances, and what are their key characteristics?
-
-    The four purchasing options for EC2 instances are:
+The four purchasing options for EC2 instances are:
     - On-Demand Instances: Pay-as-you-go with no long-term commitments.
     - Reserved Instances: Reserved capacity for a 1- or 3-year term, offering significant cost savings.
     - Spot Instances: Bid for unused EC2 capacity, potentially saving up to 90% compared to On-D
