@@ -369,27 +369,22 @@ Certainly! Let's go through each question step by step:
     The primary method of interacting with AWS services is through the AWS Management Console, a web-based interface that allows you to access and manage AWS resources using a graphical user interface (GUI).
 
 #### What are the main ways to interact with AWS services?
-
-    Besides the Management Console, you can interact with AWS services using:
+Besides the Management Console, you can interact with AWS services using:
     - Command Line Interface (CLI): AWS provides a CLI tool that allows you to manage services from the command line.
     - Software Development Kits (SDKs): SDKs are available for various programming languages, making it easier to integrate AWS services into applications.
     - APIs: Directly calling AWS service APIs enables programmatic control and automation of AWS resources.
 
 #### Why is automation important in cloud deployment?
-
-    Automation in cloud deployment improves efficiency, consistency, and scalability. It reduces manual intervention, minimizes errors, and speeds up deployment processes. Automation also facilitates continuous integration and continuous deployment (CI/CD) pipelines, enabling faster delivery of applications and services.
+Automation in cloud deployment improves efficiency, consistency, and scalability. It reduces manual intervention, minimizes errors, and speeds up deployment processes. Automation also facilitates continuous integration and continuous deployment (CI/CD) pipelines, enabling faster delivery of applications and services.
 
 #### What is the primary advantage of using AWS Elastic Beanstalk over manual methods like the AWS Management Console?
-
-    AWS Elastic Beanstalk automates the deployment and management of applications, handling capacity provisioning, load balancing, scaling, and application health monitoring. This automation simplifies the deployment process and reduces the operational overhead compared to manual configuration via the Management Console.
+AWS Elastic Beanstalk automates the deployment and management of applications, handling capacity provisioning, load balancing, scaling, and application health monitoring. This automation simplifies the deployment process and reduces the operational overhead compared to manual configuration via the Management Console.
 
 #### How does AWS CloudFormation help in managing AWS resources?
-
-    AWS CloudFormation is a service that allows you to define and provision AWS infrastructure as code (IaC). It uses templates to describe resources and their dependencies in JSON or YAML format. CloudFormation automates resource provisioning, simplifies updates and rollback procedures, and helps maintain consistency across environments.
+AWS CloudFormation is a service that allows you to define and provision AWS infrastructure as code (IaC). It uses templates to describe resources and their dependencies in JSON or YAML format. CloudFormation automates resource provisioning, simplifies updates and rollback procedures, and helps maintain consistency across environments.
 
 #### What are the main components of AWS Global Infrastructure?
-
-    The main components include:
+The main components include:
     - Regions: Geographical locations where AWS deploys its data centers.
     - Availability Zones (AZs): Isolated locations within regions for fault tolerance.
     - Edge Locations: Points of presence for CDN services like CloudFront.
