@@ -1,6 +1,6 @@
 ## Domain 1: Cloud Concepts (24% of scored content)
 
-![AWS Cloud Practitioner Domains]((https://cdn.wallpapersafari.com/51/42/9ghfao.jpg))
+![AWS Cloud Practitioner Domains](https://cdn.wallpapersafari.com/51/42/9ghfao.jpg)
 
 #### 1.1: Define the benefits of the AWS Cloud
 #### Knowledge of: Value proposition of the AWS Cloud
