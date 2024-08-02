@@ -94,3 +94,29 @@
 - Identifying the services that can present the output of virtual machines (VMs) on end-user machines
 - Identifying the services that can create and deploy frontend and mobile services
 - Identifying the services that manage IoT devices
+
+What is a VPC in AWS, and why is it important?
+What is a subnet, and how is it used in a VPC?
+What is an Internet Gateway, and what role does it play in a VPC?
+What is a NAT Gateway, and why would you use it in a VPC?
+What is a Route Table, and how does it function in a VPC?
+What is a VPC Peering Connection, and what are its use cases?
+What is a Security Group, and how does it enhance security in a VPC?
+What is a Network ACL (Access Control List), and how does it differ from a Security Group?
+How do you use Network ACLs to enhance security within a VPC?
+What is an Elastic IP Address, and how is it used in a VPC?
+What is a Virtual Private Gateway, and how does it function in a VPC?
+What is Amazon Route 53, and what are its primary functions?
+What is the purpose of DNS in the context of Route 53?
+How does Route 53 provide high availability and reliability for DNS queries?
+What is geolocation routing in Route 53, and what are its benefits?
+What is Amazon CloudFront, and what are its primary functions?
+What are the benefits of using Amazon CloudFront?
+What is AWS Global Accelerator, and what is its purpose?
+What is the difference between Amazon CloudFront and AWS Global Accelerator?
+What is edge location in the context of Amazon CloudFront?
+What is AWS Direct Connect, and what are its primary benefits?
+What are common use cases for AWS Direct Connect?
+What is AWS VPN, and how does it differ from AWS Direct Connect?
+What types of AWS VPN connections are available?
+What is a Transit Gateway, and how does it benefit network connectivity?
