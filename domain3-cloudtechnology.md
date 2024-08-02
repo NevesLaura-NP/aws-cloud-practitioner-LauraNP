@@ -94,9 +94,11 @@
 - Identifying the services that can present the output of virtual machines (VMs) on end-user machines
 - Identifying the services that can create and deploy frontend and mobile services
 - Identifying the services that manage IoT devices
-
-What is a VPC in AWS, and why is it important?
+#### What is a VPC in AWS, and why is it important?
+It is a logically isolated virtual network dedicated to your AWS Account where you can launch AWS Resources such as Amazon EC2 and Amazon RDS instances. You can use VPC to create managed networks in the cloud. It is a private environment and users have full control over its configurations. The Amazon VPC can handle all networking needs and offers elasticity to make changes based on business needs at most affordable rates.
+...
 What is a subnet, and how is it used in a VPC?
+Subnets are chosen under certain availability zones
 What is an Internet Gateway, and what role does it play in a VPC?
 What is a NAT Gateway, and why would you use it in a VPC?
 What is a Route Table, and how does it function in a VPC?
