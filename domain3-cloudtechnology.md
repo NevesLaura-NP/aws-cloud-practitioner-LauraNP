@@ -177,3 +177,107 @@ Client VPN: Provides secure remote access to your VPC for individual users via V
 #### What is a Transit Gateway, and how does it benefit network connectivity?
 
 AWS Transit Gateway is a network transit hub that enables you to connect multiple VPCs and on-premises networks through a single gateway. It simplifies network management by consolidating connections, reducing the complexity of managing multiple peering relationships, and providing scalable network interconnectivity.
+
+
+### What is object storage typically used for in cloud computing?
+Object storage is used for storing large amounts of unstructured data, such as documents, images, videos, backups, and archives. It is designed for scalability, durability, and accessibility. Unlike file storage, object storage stores data as discrete units (objects) and is often used for data that needs to be accessed frequently or archived over long periods.
+How does Amazon S3 handle durability and availability for object storage?
+
+Amazon S3 provides high durability and availability by replicating data across multiple geographic regions and data centers. It achieves 99.999999999% (11 9's) durability by storing objects in multiple facilities and automatically handling the replication and recovery process. It offers 99.99% availability for objects in the Standard storage class.
+
+### What are some typical use cases for Amazon S3?
+Typical use cases include:
+Backup and Restore: Storing backup copies of data.
+Data Archiving: Long-term data storage, such as compliance data.
+Big Data Analytics: Storing large datasets for analytics processing.
+Static Website Hosting: Hosting static web assets like HTML, CSS, and JavaScript.
+Media Storage and Distribution: Storing and distributing media files like images and videos.
+
+### What is the main difference between Amazon S3 Standard and Amazon S3 Standard-IA storage classes?
+Amazon S3 Standard: Designed for frequently accessed data with low latency and high throughput. It offers high durability and availability.
+Amazon S3 Standard-IA (Infrequent Access): Designed for data that is less frequently accessed but requires rapid access when needed. It has a lower storage cost compared to S3 Standard but higher retrieval costs.
+What is the Amazon S3 Glacier storage class used for?
+
+Amazon S3 Glacier is used for long-term archival and backup of data that is rarely accessed. It offers very low-cost storage with retrieval times that range from minutes to hours, making it suitable for data that is infrequently accessed but needs to be preserved.
+
+### How does Amazon S3 Intelligent-Tiering work, and what are its benefits?
+Amazon S3 Intelligent-Tiering automatically moves data between two access tiers (frequent and infrequent) based on changing access patterns. It uses monitoring and automation to move objects between tiers to optimize cost. Benefits include cost savings without manual intervention and automated data management based on access patterns.
+Explain the use case for Amazon S3 One Zone-IA.
+
+Amazon S3 One Zone-IA is used for data that is infrequently accessed but does not require multiple availability zone resilience. It is ideal for cost-effective storage of non-critical data that can be recreated or does not need to be highly durable.
+
+### What is Amazon Elastic Block Store (Amazon EBS) and what are its primary use cases?
+Amazon EBS is a block storage service that provides persistent storage volumes for Amazon EC2 instances. It is used for storing data that requires frequent read and write operations, such as database data, application logs, and file systems. It offers low-latency performance and is well-suited for use cases requiring high IOPS.
+
+### What are the main types of EBS volumes and their characteristics?
+General Purpose SSD (gp3/gp2): Balanced price and performance, suitable for a wide range of applications.
+Provisioned IOPS SSD (io2/io1): High performance for I/O-intensive applications with provisioned IOPS.
+Throughput Optimized HDD (st1): Low-cost, high-throughput for large, sequential workloads like big data.
+Cold HDD (sc1): Lowest-cost storage for infrequent access with large amounts of data.
+What is the difference between Amazon EBS and instance store?
+
+Amazon EBS: Provides persistent storage that remains available even if the EC2 instance is stopped or terminated. It supports snapshots for backup and data durability.
+Instance Store: Provides temporary storage that is physically attached to the host machine and is lost if the instance is stopped or terminated. It is suitable for temporary data that can be recreated, such as caches or buffers.
+
+### What are some common use cases for instance store volumes?
+Common use cases include:
+Temporary Storage: For caching and buffering data.
+Ephemeral Data: Data that is not needed after the instance is stopped or terminated.
+High-Performance Computing: Applications that require high IOPS and low-latency access to data.
+
+### Can you attach an EBS volume to multiple EC2 instances at the same time?
+Generally, an EBS volume can only be attached to a single EC2 instance at a time. However, an EBS volume can be attached to multiple instances using the EBS Multi-Attach feature for specific volume types, which allows read-write access from multiple instances.
+What is the maximum size of a single Amazon EBS volume?
+
+The maximum size of a single Amazon EBS volume is 64 TiB.
+
+### How do you ensure the durability of data stored in Amazon EBS?
+Durability is ensured through the following:
+Snapshots: Regular snapshots create backups of EBS volumes to Amazon S3, providing durability and recoverability.
+Replication: EBS volumes are replicated within the availability zone to protect against hardware failure.
+
+### What is Amazon EBS Snapshots and how are they used?
+Amazon EBS Snapshots are backups of EBS volumes stored in Amazon S3. They are used to create point-in-time copies of volumes, which can be restored or used to create new volumes. They are useful for data protection, backup, and recovery.
+
+### Can you change the volume type of an existing Amazon EBS volume?
+Yes, you can change the volume type of an existing EBS volume by modifying the volume’s attributes. This process may require the volume to be detached and reattached or the instance to be stopped and restarted, depending on the volume type change.
+
+### What is Amazon Elastic File System (Amazon EFS) and what are its primary use cases?
+Amazon EFS is a fully managed, scalable, and elastic file storage service that provides shared access to file systems across multiple EC2 instances. Primary use cases include:
+Content Management: Shared file storage for applications.
+Big Data and Analytics: Shared access to data for processing.
+Web Serving and Content Management: Serving dynamic content with scalability.
+
+### What are the key features of Amazon EFS?
+Key features include:
+Scalability: Automatically scales capacity up or down.
+Elasticity: Grows and shrinks based on the amount of data stored.
+Shared Access: Multiple EC2 instances can access the file system concurrently.
+Durability: Data is redundantly stored across multiple AZs.
+
+### What is Amazon FSx and what file systems does it support?
+Amazon FSx is a service that provides fully managed file systems with the capabilities of traditional file systems. It supports:
+Amazon FSx for Windows File Server: Windows-compatible file system with Active Directory integration.
+Amazon FSx for Lustre: High-performance file system optimized for compute-intensive workloads.
+
+### What are common use cases for Amazon FSx for Windows File Server?
+Common use cases include:
+Enterprise Applications: Applications requiring Windows file system features.
+Home Directories: Centralized storage for user profiles and home directories.
+Application Development: Development environments for Windows applications.
+
+### Can Amazon EFS be accessed from on-premises environments?
+Yes, Amazon EFS can be accessed from on-premises environments through AWS Direct Connect or VPN connections, allowing for hybrid cloud scenarios where on-premises systems interact with cloud-based file systems.
+
+### What is the difference between Amazon EFS and Amazon FSx for Windows File Server?
+Amazon EFS provides a Linux-native NFS file system suitable for general-purpose file storage and sharing.
+Amazon FSx for Windows File Server provides a Windows-native file system compatible with SMB and supports features like Active Directory integration, making it suitable for Windows-based applications and environments.
+
+### What are the performance modes available in Amazon EFS?
+General Purpose Mode: Optimized for latency-sensitive use cases where throughput is important, such as web serving and content management.
+Max I/O Mode: Optimized for applications requiring high throughput and high IOPS, such as big data and analytics. It scales to accommodate large numbers of instances accessing the file system concurrently.
+Feel free to ask if you need more details on any of these topics!
+
+
+
+
